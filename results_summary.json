@@ -1,0 +1,247 @@
+{
+  "raw_rows": 10035,
+  "raw_cols": 27,
+  "duplicates_removed": 35,
+  "clean_rows": 10000,
+  "category_fixes": 300,
+  "region_fixes": 200,
+  "bad_cpu": 22,
+  "bad_latency": 18,
+  "missing": {
+    "cpu_utilization_pct": 22,
+    "node_spot_price_usd_hr": 38,
+    "pod_memory_available_pct": 80,
+    "gc_pause_time_ms": 100,
+    "broker_latency_ms": 168,
+    "queue_wait_time_ms": 200,
+    "network_io_mbps": 250
+  },
+  "n_node_types": 979,
+  "class_share": {
+    "Normal": 0.6696,
+    "Bottleneck": 0.3304
+  },
+  "rate_by_category": {
+    "Streaming": 0.2522,
+    "Aggregation": 0.2593,
+    "DocumentProcessing": 0.3048,
+    "ETL": 0.3511,
+    "WebScraping": 0.3524,
+    "MLTraining": 0.4351
+  },
+  "rate_by_priority": {
+    "Low": 0.3531,
+    "Medium": 0.3322,
+    "High": 0.3194,
+    "Critical": 0.2834
+  },
+  "rate_by_memory_tier": {
+    "\u2264 8 GiB": 0.6588,
+    "8\u201332 GiB": 0.3729,
+    "32\u2013128 GiB": 0.1169,
+    "> 128 GiB": 0.0351
+  },
+  "rate_by_pressure_decile": {
+    "D1": 0.019,
+    "D2": 0.061,
+    "D3": 0.1309,
+    "D4": 0.1762,
+    "D5": 0.281,
+    "D6": 0.338,
+    "D7": 0.412,
+    "D8": 0.49,
+    "D9": 0.605,
+    "D10": 0.791
+  },
+  "peak_rate": 0.37736469814114165,
+  "offpeak_rate": 0.25758735016577405,
+  "cost_table": {
+    "Bottleneck": {
+      "jobs": 3304,
+      "total_cost": 407.55867,
+      "median_cost": 0.04064,
+      "median_runtime": 303.85,
+      "job_share": 0.3304,
+      "cost_share": 0.490189
+    },
+    "Normal": {
+      "jobs": 6696,
+      "total_cost": 423.87271,
+      "median_cost": 0.028315,
+      "median_runtime": 50.0,
+      "job_share": 0.6696,
+      "cost_share": 0.509811
+    }
+  },
+  "spot_saving": 0.6703785785893406,
+  "low_priority_cost_share": 0.30923490041956314,
+  "tree_params": {
+    "model__max_depth": 8,
+    "model__min_samples_leaf": 50
+  },
+  "forest_params": {
+    "model__max_depth": null,
+    "model__min_samples_leaf": 2
+  },
+  "cv_table": {
+    "Logistic Regression": {
+      "accuracy": 0.8504,
+      "precision": 0.7342,
+      "recall": 0.8592,
+      "f1": 0.7915,
+      "roc_auc": 0.9398,
+      "roc_auc_sd": 0.0026
+    },
+    "Decision Tree": {
+      "accuracy": 0.7765,
+      "precision": 0.6293,
+      "recall": 0.7938,
+      "f1": 0.7015,
+      "roc_auc": 0.8674,
+      "roc_auc_sd": 0.0085
+    },
+    "Random Forest": {
+      "accuracy": 0.8335,
+      "precision": 0.7227,
+      "recall": 0.8051,
+      "f1": 0.7616,
+      "roc_auc": 0.915,
+      "roc_auc_sd": 0.0063
+    }
+  },
+  "test_table": {
+    "Logistic Regression": {
+      "accuracy": 0.8592,
+      "precision": 0.7448,
+      "recall": 0.8729,
+      "f1": 0.8038,
+      "roc_auc": 0.9471
+    },
+    "Random Forest": {
+      "accuracy": 0.8452,
+      "precision": 0.7348,
+      "recall": 0.8317,
+      "f1": 0.7802,
+      "roc_auc": 0.9267
+    },
+    "Decision Tree": {
+      "accuracy": 0.7736,
+      "precision": 0.6186,
+      "recall": 0.8208,
+      "f1": 0.7055,
+      "roc_auc": 0.8718
+    }
+  },
+  "best_model": "Logistic Regression",
+  "confusion_matrix": [
+    [
+      1427,
+      247
+    ],
+    [
+      105,
+      721
+    ]
+  ],
+  "op_threshold": 0.4290613356798911,
+  "op_recall": 0.9007263922518159,
+  "op_precision": 0.7188405797101449,
+  "op_flag_rate": 0.414,
+  "caught_cost_share": 0.8337497025360786,
+  "median_cost_ratio": 1.4352816528341867,
+  "median_runtime_ratio": 6.077000000000001,
+  "high_pressure_rate": 0.698,
+  "low_pressure_rate": 0.04,
+  "cpu_hot_rate": 0.5282767797737857,
+  "cpu_cool_rate": 0.1762805722196585,
+  "top_lr_coef": {
+    "memory_pressure_log": 3.0429,
+    "payload_size_mb_log": -1.4526,
+    "gc_pause_time_ms": 0.9906,
+    "cpu_utilization_pct": 0.9867,
+    "executor_memory_mb": 0.9617,
+    "job_category_MLTraining": 0.9309,
+    "queue_wait_time_ms": 0.8991,
+    "job_category_Streaming": -0.7754,
+    "job_category_Aggregation": -0.6633,
+    "node_price_usd_hr": 0.5171,
+    "retry_count": 0.4611,
+    "priority_level_Critical": -0.4514
+  },
+  "top_rf_imp": {
+    "memory_pressure_ratio": 0.1139,
+    "node_memory_gib": 0.0868,
+    "node_price_usd_hr": 0.0811,
+    "cpu_utilization_pct": 0.0758,
+    "threads_per_vcpu": 0.073,
+    "gc_pause_time_ms": 0.0712,
+    "queue_wait_time_ms": 0.0645,
+    "pod_memory_available_pct": 0.0586,
+    "node_vcpus_n": 0.0473,
+    "executor_memory_mb": 0.0419,
+    "payload_size_mb": 0.0319,
+    "broker_latency_ms": 0.0309
+  },
+  "corr_with_target": {
+    "memory_pressure_log": 0.4905,
+    "threads_per_vcpu": 0.4382,
+    "node_memory_gib": -0.3186,
+    "node_vcpus_n": -0.3357,
+    "cpu_utilization_pct": 0.247,
+    "pod_memory_available_pct": -0.2491,
+    "gc_pause_time_ms": 0.2567,
+    "queue_wait_time_ms": 0.2134,
+    "payload_size_mb_log": 0.0995
+  },
+  "class_medians": {
+    "Bottleneck": {
+      "payload_size_mb": 40.56,
+      "pod_memory_available_pct": 49.9,
+      "cpu_utilization_pct": 61.75,
+      "memory_pressure_ratio": 0.00673,
+      "threads_per_vcpu": 4.0,
+      "queue_wait_time_ms": 98.65,
+      "gc_pause_time_ms": 45.25,
+      "node_memory_gib": 16.0,
+      "node_vcpus_n": 2.0,
+      "node_price_usd_hr": 0.1743,
+      "execution_time_sec": 303.85,
+      "job_cost_usd": 0.04064
+    },
+    "Normal": {
+      "payload_size_mb": 33.055,
+      "pod_memory_available_pct": 59.5,
+      "cpu_utilization_pct": 51.7,
+      "memory_pressure_ratio": 0.00114,
+      "threads_per_vcpu": 1.25,
+      "queue_wait_time_ms": 72.65,
+      "gc_pause_time_ms": 29.85,
+      "node_memory_gib": 64.0,
+      "node_vcpus_n": 8.0,
+      "node_price_usd_hr": 0.68,
+      "execution_time_sec": 50.0,
+      "job_cost_usd": 0.02832
+    }
+  },
+  "time_span": [
+    "2026-06-01 00:00:00",
+    "2026-08-29 23:46:00"
+  ],
+  "outliers": {
+    "payload_size_mb": 737,
+    "queue_wait_time_ms": 409,
+    "gc_pause_time_ms": 458,
+    "broker_latency_ms": 293,
+    "execution_time_sec": 1229
+  },
+  "node_price_range": [
+    0.051,
+    13.968
+  ],
+  "node_memory_range": [
+    1.7,
+    768.0
+  ],
+  "total_cost": 831.4313800000001,
+  "payload_corr_pressure": 0.5748631436054428
+}
